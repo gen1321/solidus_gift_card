@@ -1,11 +1,11 @@
-SpreeGiftCard [![Build Status](https://secure.travis-ci.org/jdutil/spree_gift_card.png)](http://travis-ci.org/jdutil/spree_gift_card) [![Dependency Status](https://gemnasium.com/jdutil/spree_gift_card.png?travis)](https://gemnasium.com/jdutil/spree_gift_card)
+Solidus GiftCard gift_card
 =============
-
+ Port by Boris Beginin
 **Please note that upcoming Spree 2.2.x is the end of life for this extension unless a community member would like to take over maintaining it (message me or open an issue if you would like to).  Rather than refactoring extension to make use of the adjustment refactoring in Spree 2.2.x there is likely going to be a complete rewrite handling Gift Cards as a payment method instead of adjustment.**
 
 **Please use https://github.com/spree-contrib/spree_store_credit_payment_method instead.**
 
-This extension adds gift card functionality to spree.  It is based off the original [spree_gift_cards](http://github.com/spree/spree_gift_cards)
+This extension adds gift card functionality to solidus.  It is based off the original [spree_gift_cards](http://github.com/spree/spree_gift_cards)
 extension, but differs in that it does not require a user to have an account.  Gift cards may be redeemed by
 entering a unique gift card code during checkout rather than applying store credits to the customers account.
 
@@ -18,7 +18,7 @@ Requirements
 Installation
 ============
 
-1. Add `gem 'spree_gift_card', github: 'jdutil/spree_gift_card'` to Gemfile
+1. Add `gem 'spree_gift_card', github: 'gen1321/solidus_gift_card` to Gemfile
 1. Run `bundle`
 1. Run `rails g spree_gift_card:install`
 1. Run `rails g spree_gift_card:seed`
@@ -46,4 +46,5 @@ Todo
 1. test product controller redirect?
 1. Apply gift code in a before filter if possible to avoid overriding the update method for easier upgrades?
 
-Copyright (c) 2012 Jeff Dutil, released under the New BSD License
+original spree gem by Jeff Dutil
+
